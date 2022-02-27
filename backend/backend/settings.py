@@ -44,12 +44,12 @@ INSTALLED_APPS = [
 
 # Whitelist of the addresses + port allowed to send requests.
 # Should make sure that the port is 8080 and not 8081 (multiple origins may cause that).
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:8080",
+# ]
 
 # Allow any domains to make a request (not recommended in production). 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',    

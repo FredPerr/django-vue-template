@@ -10,13 +10,13 @@
 export default {
     name: 'UserEntry',
     props: {
-        user: String
-    },
+        user: {type: Object}
+    }
 }
 </script>
 
 <style scoped>
 .user {
-    
+    text-align: left;
 }
 </style>

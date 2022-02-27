@@ -12,6 +12,7 @@
 
 <script>
 // @ is an alias to /src
+import axios from 'axios'
 import UserEntry from '@/components/UserEntry.vue'
 
 
@@ -22,12 +23,13 @@ export default {
   },
   data(){
     return {
-      users: [
-        {id: 0, name: 'user 1', job:'job 1'},
-        {id: 1, name: 'user 2', job:'job 2'},
-        {id: 2, name: 'user 3', job:'job 3'},
-      ]
+      users: null
     }
+  },
+  mounted(){
+    axios.get('http://localhost:8000/user')
+    .then((response)=> (this.users = response.data))
+    .catch((error) => console.error(error))
   }
 }
 </script>
