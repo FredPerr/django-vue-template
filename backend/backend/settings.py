@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'home.apps.HomeConfig',
+    'base.apps.BaseConfig',
 ]
 
 # Whitelist of the addresses + port allowed to send requests.

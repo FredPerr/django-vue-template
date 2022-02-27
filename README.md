@@ -23,6 +23,8 @@ _(In settings.py in the python backend:)_
 Change the database name, port if needed.
 Then, **ADD TWO ENVIRONMENT VARIABLES: DB_USER (user of the database) and DB_PASSWORD (password of the user accessing the database)**.
 
+Make sure to **create the database and use the correct password and username** setup in the database manager.
+
 
 ## Tips for development
 
