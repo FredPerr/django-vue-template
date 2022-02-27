@@ -32,5 +32,4 @@ Some software are useful when developping an an using an API. To test request th
 
 Additionally, the django backend uses [PostgreSQL](https://www.postgresql.org/download/) by default, and not SQLite3 as django initially configure. <i>You might want ot use pgAdmin (provided by PostgreSQL) to view and test the database.</i> The default configuration can be changed in the _settings.py_ of the django project.
 
-# TODO: Add an example route for the api with test model and serializer.
-# TODO: Add an axios communication example with the api.
+### An example of how to use the backend and frontend is by default availble aroud the 'user' model.
