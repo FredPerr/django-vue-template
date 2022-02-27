@@ -16,6 +16,14 @@ Windows:
 Install the requirements
 > pip install -r requirements.txt
 
+
+Setup the database authentication credentials:
+
+_(In settings.py in the python backend:)_
+Change the database name, port if needed.
+Then, **ADD TWO ENVIRONMENT VARIABLES: DB_USER (user of the database) and DB_PASSWORD (password of the user accessing the database)**.
+
+
 ## Tips for development
 
 Some software are useful when developping an an using an API. To test request that will be made between the frontend and backend. You can use [Postman](https://www.postman.com/downloads/).
